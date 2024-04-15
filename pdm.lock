@@ -936,7 +936,7 @@ files = [
 
 [[package]]
 name = "nox"
-version = "2024.3.2"
+version = "2024.4.15"
 requires_python = ">=3.7"
 summary = "Flexible test automation."
 groups = ["dev"]
@@ -944,11 +944,12 @@ dependencies = [
     "argcomplete<4.0,>=1.9.4",
     "colorlog<7.0.0,>=2.6.1",
     "packaging>=20.9",
+    "tomli>=1; python_version < \"3.11\"",
     "virtualenv>=20.14.1",
 ]
 files = [
-    {file = "nox-2024.3.2-py3-none-any.whl", hash = "sha256:e53514173ac0b98dd47585096a55572fe504fecede58ced708979184d05440be"},
-    {file = "nox-2024.3.2.tar.gz", hash = "sha256:f521ae08a15adbf5e11f16cb34e8d0e6ea521e0b92868f684e91677deb974553"},
+    {file = "nox-2024.4.15-py3-none-any.whl", hash = "sha256:6492236efa15a460ecb98e7b67562a28b70da006ab0be164e8821177577c0565"},
+    {file = "nox-2024.4.15.tar.gz", hash = "sha256:ecf6700199cdfa9e5ea0a41ff5e6ef4641d09508eda6edb89d9987864115817f"},
 ]
 
 [[package]]
@@ -1438,7 +1439,7 @@ name = "tomli"
 version = "2.0.1"
 requires_python = ">=3.7"
 summary = "A lil' TOML parser"
-groups = ["coverage", "mypy", "safety", "tests"]
+groups = ["coverage", "dev", "mypy", "safety", "tests"]
 marker = "python_version < \"3.11\""
 files = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
